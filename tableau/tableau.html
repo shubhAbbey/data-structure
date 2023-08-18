@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   
+</head>
+<body>
+    <iframe name='iframe'></iframe>
+    <form id="login" target="iframe" method="post" action="https://sso.online.tableau.com/public/prelogin/sendPassword">
+        <input type="hidden" name="email" value="shailendrak@creditnirvana.ai" />
+        <input type="hidden" name="password" value="Shailendra@10" />
+    </form>
+
+    <h1>Redirecting...</h1>
+
+   
+    <!-- <script type="text/javascript">
+        // submit the form into iframe for login into remote site
+        // document.getElementById('login').submit()
+        // setTimeout(() => {
+        //     window.open("https://prod-apnortheast-a.online.tableau.com/t/creditnirvana/views/CollectionEfficienyDashboard/CollectionEfficienydashboard?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link", '_self');
+
+        // }, 0);
+
+        // document.getElementById('login').submit()
+
+
+        // document.forms['login'].addEventListener('submit', (event) => {
+        //     event.preventDefault();
+        //     // TODO do something here to show user that form is being submitted
+        //     fetch(event.target.action, {
+        //         method: 'POST',
+        //         body: new URLSearchParams(new FormData(event.target)) // event.target is the form
+        //     }).then((resp) => {
+        //         return resp.text(); // or resp.text() or whatever the server sends
+        //     }).then((body) => {
+        //         console.log(body, 'check response')
+        //     }).catch((error) => {
+        //         // TODO handle error
+        //     });
+        // });
+
+
+        $('#login')
+            .ajaxForm({
+                url: 'https://sso.online.tableau.com/public/prelogin/sendPassword', // or whatever
+                dataType: 'json',
+                data: {
+                    email: "shailendrak@creditnirvana.ai",
+                    password: "Shailendra@10"
+
+                },
+                success: function (response) {
+                    alert("The server says: " + response);
+                },
+                error: function (data) {
+                    alert(data,'dsadsadsadsa');
+                }
+            })
+            ;
+
+
+    </script> -->
+
+
+    <script type="text/javascript">
+        // submit the form into iframe for login into remote site
+        setTimeout(()=>{
+window.open("https://prod-apnortheast-a.online.tableau.com/t/creditnirvana/views/CollectionEfficienyDashboard/CollectionEfficienydashboard?:showAppBanner=false&:origin=viz_share_link&:display_count=n&:showVizHome=n", '_self');
+        },2000)
+        
+        document.getElementById('login').submit()
+    </script>
+
+</body>
+</html>
