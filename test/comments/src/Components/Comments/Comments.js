@@ -70,7 +70,7 @@ export default function App() {
       arr.map((item,index)=>{
         return <div key = {index}>
             {
-              item.replies.length?
+            //   item.replies.length?
             }
         </div>
       })
